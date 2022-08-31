@@ -1,13 +1,15 @@
 body {
     font-family: Arial, Verdana, sans-serif;
+    background-color: black;
 }
 
 #piezas {
     display: flex;
     flex-wrap: wrap;
-    width: 400px;
-    margin: auto;
+    width: 585px;
     justify-content: center;
+    /* border: 2px solid white; */
+    margin: 0;
 }
 
 #puzzle {
@@ -16,19 +18,21 @@ body {
     height: 290px;
     display: flex;
     flex-wrap: wrap;
-    /* margin: auto; */
+    margin: 0;
 }
 
 .pieza {
-    width: 200px;
+    width: 180px;
     height: 180px;
     background-size: cover;
+    margin: 3px;
 }
 
 .placeholder {
-    background-color: #F2F2F2;
+    /* background-color: #F2F2F2; */
+    background-color: wheat;
     outline: 1px solid #333;
-    width: 200px;
+    width: 180px;
     height: 180px;
     transition: 1s;
 }
