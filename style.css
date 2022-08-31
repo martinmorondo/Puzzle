@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, Verdana, sans-serif;
+}
+
+#piezas {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    margin: auto;
+    justify-content: center;
+}
+
+#puzzle {
+    /* border: 1px solid black; */
+    width: 600px;
+    height: 290px;
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: auto; */
+}
+
+.pieza {
+    width: 200px;
+    height: 180px;
+    background-size: cover;
+}
+
+.placeholder {
+    background-color: #F2F2F2;
+    outline: 1px solid #333;
+    width: 200px;
+    height: 180px;
+    transition: 1s;
+}
+
+.placeholder.hover {
+    background-color: #B3D67C;
+    opacity: 0.5;
+}
+
+.placeholder .pieza {
+    margin: 0;
+}
+
+#mensaje {
+    color: black;
+    text-align: center;
+    display: none;
+    text-shadow: 1px 1px violet;
+}
+
+.ganaste {
+    background: radial-gradient(circle at 48.7% 51.86%, #faffff 0, #eafffc 7.14%, #d9fff9 14.29%, #c5fff7 21.43%, #adfff5 28.57%, #92fff3 35.71%, #6ffcf2 42.86%, #3cf2f2 50%, #00e8f3 57.14%, #00def6 64.29%, #00d4fa 71.43%, #00cbff 78.57%, #00c3ff 85.71%, #00bbff 92.86%, #00b3ff 100%);
+}
+
+.ganaste #mensaje {
+    font-size: 8rem;
+    color: black;
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+}
+
+.ganaste .placeholder {
+    outline:  auto transparent;
+}
+
+.ganaste #piezas {
+    display: none;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
